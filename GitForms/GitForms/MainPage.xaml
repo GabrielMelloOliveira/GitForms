@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GitForms"
+             x:Class="GitForms.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+            <Image Source="icon.png"/>
+            <Label Text="GitForms" TextColor="Black" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="eUsername" Placeholder="Digite seu username"/>
+            <Button x:Name="btnLogin" BorderRadius="90" BackgroundColor="Black" TextColor="White" Text="Logar"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

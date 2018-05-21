@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             x:Class="GitForms.View.HomePage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="GitForms">
+            <ContentPage.Content>
+                <StackLayout>
+                    <StackLayout BackgroundColor="Black" Padding="0, 40" HorizontalOptions="FillAndExpand">
+                        <!--<Image Source="{Binding avatar_url}"/>-->
+                        <controls:CircleImage Source="{Binding avatar_url}">
+                        </controls:CircleImage>
+                        <Label x:Name="lbLogin" Margin="0, 15" FontSize="Medium" Text="Login" TextColor="White" HorizontalOptions="CenterAndExpand" />
+                    </StackLayout>
+                    <Button Margin="0, 20, 0, 0" BackgroundColor="Transparent" TextColor="Black" x:Name="btnRepos"     Text="Meus Repositórios" />
+                    <Button BackgroundColor="Transparent" TextColor="Black" x:Name="btnFollowers" Text="Seguidores" />
+                    <Button BackgroundColor="Transparent" TextColor="Black" x:Name="btnFollowing" Text="Seguindo" />
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage Title="GitForms"></ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
