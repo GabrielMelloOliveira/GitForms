@@ -2,7 +2,7 @@
 
 ![VERSION](https://img.shields.io/badge/GitForms%20--%20version-v1.1.0-blue.svg)
 
-Gitforms is a client application of the [**Github API**](https://api.github.com), this project was developed using the technology of Xamarin Forms, and can be exported to Android, iOS and Windows 10.
+Gitforms is a client application of the [**Github API**](https://developer.github.com/v3), this project was developed using the technology of Xamarin Forms, and can be exported to Android, iOS and Windows 10.
 
 In this project was also used the plugin [**Xam.Plugins.Forms.ImageCircle**](https://www.nuget.org/packages/Xam.Plugins.Forms.ImageCircle/3.0.0.5)   
 to leave the circular image.
